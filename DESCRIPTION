@@ -1,0 +1,27 @@
+Package: requestsR
+Type: Package
+Title: R wrapper for the Markovify Python module
+Version: 0.01
+Date: 2017-10-18
+Author: Alex Bresler (abresler@@asbcllc.com)
+Maintainer: Alex Bresler <abresler@asbcllc.com>
+Description: R wrapper for the 'requests' (<docs.python-requests.org>) Python module. 
+URL: https://github.com/abresler/requestsR
+BugReports: https://github.com/abresler/requestsR/issues
+License: AGPL
+Suggests:
+    testthat
+Depends:
+    R (>= 3.2.0)
+Imports:
+   reticulate,
+   glue,
+   dplyr,
+   purrr,
+   stringr,
+   tibble,
+   xml2,
+   rvest,
+   jsonlite
+LazyData: true
+RoxygenNote: 6.0.1
