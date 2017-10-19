@@ -1,8 +1,8 @@
 Package: requestsR
 Type: Package
-Title: R wrapper for the Markovify Python module
+Title: R wrapper for the requests Python module
 Version: 0.01
-Date: 2017-10-18
+Date: 2017-10-19
 Author: Alex Bresler (abresler@@asbcllc.com)
 Maintainer: Alex Bresler <abresler@asbcllc.com>
 Description: R wrapper for the 'requests' (<docs.python-requests.org>) Python module. 
