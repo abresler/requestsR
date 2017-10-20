@@ -46,8 +46,8 @@ system("pip install requests")
 #### Mungers
 
 -   `convert_dictionary_to_list`: converts dictionary to list
--   `parse_from_html`: parses html from response object
--   `parse_from_json`: parses JSON from response object
+-   `parse_response_html`: parses html from response object
+-   `parse_response_json`: parses JSON from response object
 
 ### Installation
 
@@ -77,7 +77,7 @@ resp <-
 
 json_data <-
   resp %>%
-  parse_from_json(is_data_frame = F)
+  parse_response_json(is_data_frame = F)
 
 json_data
 ```
@@ -88,7 +88,7 @@ json_data
 resp <- 
   post(url = 'http://httpbin.org/post', data = list(key = "value"))
 resp %>% 
-  parse_from_json(is_data_frame = FALSE)
+  parse_response_json(is_data_frame = FALSE)
 ```
 
 ### Getting with payloads
@@ -100,7 +100,7 @@ payload <-
 resp <- 
   Get(url = 'http://httpbin.org/get', params = payload)
 resp %>% 
-  parse_from_json()
+  parse_response_json()
 ```
 
 ### Complex posts
@@ -114,7 +114,7 @@ resp <-
 resp$text
 resp$headers
 resp %>%
-  parse_from_json()
+  parse_response_json()
 ```
 
 ### Posting with tuples

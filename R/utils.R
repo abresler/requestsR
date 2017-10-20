@@ -72,7 +72,7 @@ check_url <-
 #' @export
 #'
 #' @examples
-parse_from_json <-
+parse_response_json <-
   function(resp, is_data_frame = FALSE) {
     json_df <-
       resp$content %>%
@@ -99,7 +99,7 @@ parse_from_json <-
 #' @export
 #'
 #' @examples
-parse_from_html <-
+parse_response_html <-
   function(resp) {
     html <-
       resp$content %>%

@@ -97,16 +97,16 @@ Get <-
       if (parse_json[['is_data_frame']] == T) {
         df <-
         resp %>%
-        parse_from_json(is_data_frame = TRUE)
+        parse_response_json(is_data_frame = TRUE)
       } else {
         df <-
           resp %>%
-          parse_from_json(is_data_frame = FALSE)
+          parse_response_json(is_data_frame = FALSE)
       }
       } else {
         df <-
           resp %>%
-          parse_from_json(is_data_frame = FALSE)
+          parse_response_json(is_data_frame = FALSE)
       }
 
       return(df)
@@ -115,7 +115,7 @@ Get <-
     if (parse_html) {
       page <-
         resp %>%
-        parse_from_html()
+        parse_response_html()
 
       return(page)
     }
@@ -137,16 +137,16 @@ Get <-
       if (parse_json[['is_data_frame']] == T) {
         df <-
           resp %>%
-          parse_from_json(is_data_frame = TRUE)
+          parse_response_json(is_data_frame = TRUE)
       } else {
         df <-
           resp %>%
-          parse_from_json(is_data_frame = FALSE)
+          parse_response_json(is_data_frame = FALSE)
       }
     } else {
       df <-
         resp %>%
-        parse_from_json(is_data_frame = FALSE)
+        parse_response_json(is_data_frame = FALSE)
     }
 
     return(df)
@@ -155,7 +155,7 @@ Get <-
   if (parse_html) {
     page <-
       resp %>%
-      parse_from_html()
+      parse_response_html()
 
     return(page)
   }
