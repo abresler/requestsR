@@ -48,12 +48,16 @@ post.basic <-
 #' @import dplyr purrr
 #' @examples
 post <-
-  function(url,
+  function(url = NULL,
            auth = NULL,
            parse_json = NULL,
            # list(parse_to_json = TRUE, return_data_frame = FALSE)
            parse_html = FALSE,
            ...) {
+
+    if (url %>% purrr::is_null()) {
+      stop("Please enter url")
+    }
     resp <-
       post.basic(url = url, ...)
 

@@ -1,7 +1,7 @@
 Package: requestsR
 Type: Package
 Title: Python requests for R
-Version: 0.01003
+Version: 0.010032
 Date: 2017-10-19
 Author: Alex Bresler (abresler@@asbcllc.com)
 Maintainer: Alex Bresler <abresler@asbcllc.com>

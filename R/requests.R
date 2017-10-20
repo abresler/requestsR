@@ -57,7 +57,7 @@ generate_headers <-
 #' @export
 #'
 #' @examples
-head <-
+Head <-
   function(url, ...) {
     check_url(url = url)
     import_requests()
@@ -114,7 +114,7 @@ delete <-
 #' @export
 #'
 #' @examples
-options <- function(url, ...) {
+Options <- function(url, ...) {
   check_url(url = url)
   import_requests()
   resp <-

@@ -5,7 +5,7 @@ library(jsonlite)
 # basic.get -------------------------------------------------------------------
 
 resp <-
-  requestsR::get(url = 'https://api.github.com/events')
+  Get(url = 'https://api.github.com/events')
 
 json_data <-
   resp %>%
@@ -31,7 +31,7 @@ resp = options('http://httpbin.org/get')
 
 # payloads ----------------------------------------------------------------
 payload <- "{'key1': 'value1', 'key2': 'value2'}" %>% convert_dictionary_to_list()
-resp <- get(url = 'http://httpbin.org/get', params = payload)
+resp <- Get(url = 'http://httpbin.org/get', params = payload)
 resp %>% parse_from_json()
 
 # headers -----------------------------------------------------------------
@@ -39,7 +39,7 @@ resp %>% parse_from_json()
 headers <-
   "{'user-agent': 'my-app/0.0.1'}" %>%
   convert_dictionary_to_list()
-get(url = 'https://api.github.com/some/endpoint', headers = headers)
+Get(url = 'https://api.github.com/some/endpoint', headers = headers)
 
 
 # Post.Complicated --------------------------------------------------------
@@ -70,10 +70,10 @@ cookies_list <-
   list(cookies_are = 'working')
 
 resp <-
-  get(url = 'http://httpbin.org/cookies', cookies = cookies)
+  Get(url = 'http://httpbin.org/cookies', cookies = cookies)
 
 resp2 <-
-  get(url = 'http://httpbin.org/cookies', cookies = cookies_list)
+  Get(url = 'http://httpbin.org/cookies', cookies = cookies_list)
 
 resp$text == resp2$text
 
@@ -85,7 +85,7 @@ resp %>% parse_from_json()
 resp$encoding
 
 # json get ----------------------------------------------------------------
-resp <- get(url = 'https://api.github.com/repos/requests/requests/issues/482')
+resp <- Get(url = 'https://api.github.com/repos/requests/requests/issues/482')
 resp$status_code
 resp %>%
   parse_from_json(is_data_frame = FALSE)
@@ -97,4 +97,4 @@ resp <- requestsR::options(url = "http://a-good-website.com/api/cats")
 resp$headers
 r$status_codes$code
 
-get(url = 'https://github.com', timeout = 5)
+Get(url = 'https://github.com', timeout = 5)

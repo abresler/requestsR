@@ -4,7 +4,8 @@
 \alias{post}
 \title{Request post}
 \usage{
-post(url, auth = NULL, parse_json = NULL, parse_html = FALSE, ...)
+post(url = NULL, auth = NULL, parse_json = NULL, parse_html = FALSE,
+  ...)
 }
 \arguments{
 \item{url}{a url}

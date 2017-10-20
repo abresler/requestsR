@@ -73,14 +73,16 @@ get.basic <-
 #' @export
 #' @import dplyr purrr
 #' @examples
-get <-
-  function(url,
+Get <-
+  function(url = NULL,
            auth = NULL,
            parse_json = NULL,
            # list(parse_to_json = TRUE, return_data_frame = FALSE)
            parse_html = FALSE,
            ...) {
-
+    if (url %>% purrr::is_null()) {
+      stop("Please enter url")
+    }
   if (!auth %>% purrr::is_null()) {
     resp <-
       get.login(url, auth = auth, ...)

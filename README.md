@@ -34,12 +34,12 @@ system("pip install requests")
 ### Work-horse functions
 
 -   `import_requests`: imports requests module for full use in R
--   `get`: mimics python get request
+-   `Get`: mimics python get request
 -   `post`: mimics python post request
 
 ### Other functions
 
--   `head`: mimics python head request
+-   `Head`: mimics python head request
 -   `delete`: mimcs python delete request
 -   `put`: mimics python put request
 
@@ -73,7 +73,7 @@ library(reticulate)
 
 ``` r
 resp <-
-  requestsR::get(url = 'https://api.github.com/events')
+  Get(url = 'https://api.github.com/events')
 
 json_data <-
   resp %>%
@@ -94,8 +94,11 @@ resp %>%
 ### Getting with payloads
 
 ``` r
-payload <- "{'key1': 'value1', 'key2': 'value2'}" %>% convert_dictionary_to_list()
-resp <- get(url = 'http://httpbin.org/get', params = payload)
+payload <- 
+  "{'key1': 'value1', 'key2': 'value2'}" %>% 
+  convert_dictionary_to_list()
+resp <- 
+  Get(url = 'http://httpbin.org/get', params = payload)
 resp %>% 
   parse_from_json()
 ```
@@ -106,7 +109,8 @@ resp %>%
 payload <-
   "{'key1': 'value1', 'key2': 'value2'}" %>%
   convert_dictionary_to_list()
-resp <- post("http://httpbin.org/post", data = payload, headers = headers)
+resp <-
+  post("http://httpbin.org/post", data = payload, headers = headers)
 resp$text
 resp$headers
 resp %>%
@@ -133,10 +137,10 @@ cookies_list <-
   list(cookies_are = 'working')
 
 resp <-
-  get(url = 'http://httpbin.org/cookies', cookies = cookies)
+  Get(url = 'http://httpbin.org/cookies', cookies = cookies)
 
 resp2 <-
-  get(url = 'http://httpbin.org/cookies', cookies = cookies_list)
+  Get(url = 'http://httpbin.org/cookies', cookies = cookies_list)
 
 resp$text == resp2$text
 ```
