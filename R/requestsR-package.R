@@ -1,10 +1,11 @@
-#' R requests wrapper
+#' Python
 #'
 #' @name requestsR
 #' @docType package
 #' @author Alex Bresler (abresler@@asbcllc.com)
-#' @import dplyr purrr stringr reticulate tibble jsonlite rvest xml2 stringi tibble
-#' @importFrom glue glue
-#' @importFrom rlang UQ
+#' @import dplyr stringr reticulate tibble xml2 stringi tibble
+#' @importFrom purrr is_null
+#' @importFrom jsonlite fromJSON
+#' @importFrom jsonlite toJSON
 
 NULL

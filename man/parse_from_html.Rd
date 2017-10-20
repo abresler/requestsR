@@ -9,6 +9,10 @@ parse_from_html(resp)
 \arguments{
 \item{resp}{response module}
 }
+\value{
+an html object
+}
 \description{
-Parse response html
+Parses response object's
+content into html
 }

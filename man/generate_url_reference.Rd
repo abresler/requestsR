@@ -2,10 +2,14 @@
 % Please edit documentation in R/utils.R
 \name{generate_url_reference}
 \alias{generate_url_reference}
-\title{Generate url referece}
+\title{Generate random url references}
 \usage{
 generate_url_reference()
 }
+\value{
+a data frame
+}
 \description{
-Generate url referece
+Creates random url references
+for use in headers
 }

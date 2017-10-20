@@ -10,5 +10,6 @@ import_requests()
 requests module
 }
 \description{
-Import requests module
+Imports request module into
+your global environment as r
 }

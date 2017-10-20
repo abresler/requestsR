@@ -2,13 +2,25 @@
 % Please edit documentation in R/requests.R
 \name{options}
 \alias{options}
-\title{Options}
+\title{Request options}
 \usage{
 options(url, ...)
 }
 \arguments{
-\item{...}{}
+\item{url}{a url}
+
+\item{...}{Other parameters passable to the option verb.
+Including \itemize{
+\item cookies: dictionary or list of cookies
+\item headers: dictionary or list of headers
+\item params: tuple or list of parameters
+\item timeout: vector of timeout
+\item data: list of data parameters
+}}
+}
+\value{
+a python request object
 }
 \description{
-Options
+Request options
 }

@@ -13,6 +13,9 @@
 
 \item{assign_name}{if not NULL assigns output to environment}
 }
+\value{
+a list
+}
 \description{
 Converty Python dictionary to list
 }

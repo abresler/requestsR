@@ -2,13 +2,25 @@
 % Please edit documentation in R/requests.R
 \name{head}
 \alias{head}
-\title{Request Head}
+\title{Request header}
 \usage{
 head(url, ...)
 }
 \arguments{
-\item{...}{}
+\item{url}{a url}
+
+\item{...}{Other parameters passable to the head verb.
+Including \itemize{
+\item cookies: dictionary or list of cookies
+\item headers: dictionary or list of headers
+\item params: tuple or list of parameters
+\item timeout: vector of timeout
+\item data: list of data parameters
+}}
+}
+\value{
+a python request object
 }
 \description{
-Request Head
+Request header
 }

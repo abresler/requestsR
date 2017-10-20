@@ -1,5 +1,7 @@
-# gdeltr2::load_needed_packages(c("purrr", "glue", "reticulate", "dplyr", "rvest", "readr", "stringr", "stringi"))
 #' Import requests module
+#'
+#' Imports request module into
+#' your global environment as r
 #'
 #' @return requests module
 #' @export
@@ -38,12 +40,20 @@ generate_headers <-
   }
 
 
-#' Request Head
+#' Request header
 #'
-#' @param url
-#' @param ...
 #'
-#' @return
+#' @param url a url
+#' @param ... Other parameters passable to the head verb.
+#' Including \itemize{
+#' \item cookies: dictionary or list of cookies
+#' \item headers: dictionary or list of headers
+#' \item params: tuple or list of parameters
+#' \item timeout: vector of timeout
+#' \item data: list of data parameters
+#' }
+#'
+#' @return a python request object
 #' @export
 #'
 #' @examples
@@ -59,12 +69,19 @@ head <-
     resp
   }
 
-#' Delete
+#' Request delete
 #'
-#' @param url
-#' @param ...
+#' @param url a url
+#' @param ... Other parameters passable to the delete verb.
+#' Including \itemize{
+#' \item cookies: dictionary or list of cookies
+#' \item headers: dictionary or list of headers
+#' \item params: tuple or list of parameters
+#' \item timeout: vector of timeout
+#' \item data: list of data parameters
+#' }
 #'
-#' @return
+#' @return a python request object
 #' @export
 #'
 #' @examples
@@ -81,12 +98,19 @@ delete <-
   }
 
 
-#' Options
+#' Request options
 #'
-#' @param url
-#' @param ...
+#' @param url a url
+#' @param ... Other parameters passable to the option verb.
+#' Including \itemize{
+#' \item cookies: dictionary or list of cookies
+#' \item headers: dictionary or list of headers
+#' \item params: tuple or list of parameters
+#' \item timeout: vector of timeout
+#' \item data: list of data parameters
+#' }
 #'
-#' @return
+#' @return a python request object
 #' @export
 #'
 #' @examples
@@ -101,12 +125,19 @@ options <- function(url, ...) {
   resp
 }
 
-#' Put
+#' Request put
 #'
-#' @param url
-#' @param ...
+#' @param url a url
+#' @param ... Other parameters passable to the head verb.
+#' Including \itemize{
+#' \item cookies: dictionary or list of cookies
+#' \item headers: dictionary or list of headers
+#' \item params: tuple or list of parameters
+#' \item timeout: vector of timeout
+#' \item data: list of data parameters
+#' }
 #'
-#' @return
+#' @return a python request object
 #' @export
 #'
 #' @examples

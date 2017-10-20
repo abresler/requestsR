@@ -25,17 +25,27 @@ post.basic <-
     resp
   }
 
-#' Post verb
+#' Request post
 #'
-#' @param url
-#' @param auth
-#' @param parse_json
-#' @param parse_html
-#' @param ...
+#' @param url a url
+#' @param auth a list of authentication variables \code{
+#' list(username = "user", password = "pwd")
+#' } or \code{NULL}
+#' @param parse_to_json if not \code{NULL} returns JSON, to return parsed JSON
+#' if possible, list(is_data_frame = TRUE)
+#' @param parse_to_html if \code{true}
+#' @param ... Other parameters passable to the get verb.
+#' Including \itemize{
+#' \item cookies: dictionary or list of cookies
+#' \item headers: dictionary or list of headers
+#' \item params: tuple or list of parameters
+#' \item timeout: vector of timeout
+#' \item data: list of data parameters
+#' }
 #'
-#' @return
+#' @return request module, json or HTML depending on input
 #' @export
-#'
+#' @import dplyr purrr
 #' @examples
 post <-
   function(url,

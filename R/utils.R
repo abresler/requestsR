@@ -1,6 +1,10 @@
-#' Generate url referece
+#' Generate random url references
 #'
-#' @return
+#' Creates random url references
+#' for use in headers
+#'
+#'
+#' @return a data frame
 #' @export
 #' @import dplyr purrr stringr
 #' @examples
@@ -57,10 +61,14 @@ check_url <-
 
 #' Parse response json
 #'
+#' Parses response object
+#' content into JSON
+#'
 #' @param resp response module
 #' @param is_data_frame if \code{TRUE} returns a data frame
 #'
 #' @return
+#' JSON object or \code{data_frame}
 #' @export
 #'
 #' @examples
@@ -68,7 +76,7 @@ parse_from_json <-
   function(resp, is_data_frame = FALSE) {
     json_df <-
       resp$content %>%
-      jsonlite::fromJSON()
+      jsonlite::fromJSON(flatten = TRUE)
 
     if (is_data_frame) {
       json_df <-
@@ -81,9 +89,13 @@ parse_from_json <-
 
 #' Parse response html
 #'
+#' Parses response object's
+#' content into html
+#'
+#'
 #' @param resp response module
 #'
-#' @return
+#' @return an html object
 #' @export
 #'
 #' @examples
@@ -102,7 +114,7 @@ parse_from_html <-
 #' @param text vector of text
 #' @param assign_name if not NULL assigns output to environment
 #'
-#' @return
+#' @return a list
 #' @export
 #'
 #' @examples

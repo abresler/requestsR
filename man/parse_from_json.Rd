@@ -11,6 +11,10 @@ parse_from_json(resp, is_data_frame = FALSE)
 
 \item{is_data_frame}{if \code{TRUE} returns a data frame}
 }
+\value{
+JSON object or \code{data_frame}
+}
 \description{
-Parse response json
+Parses response object
+content into JSON
 }

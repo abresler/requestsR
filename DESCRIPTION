@@ -1,11 +1,11 @@
 Package: requestsR
 Type: Package
-Title: R wrapper for the requests Python module
-Version: 0.01
+Title: Python requests for R
+Version: 0.01003
 Date: 2017-10-19
 Author: Alex Bresler (abresler@@asbcllc.com)
 Maintainer: Alex Bresler <abresler@asbcllc.com>
-Description: R wrapper for the 'requests' (<docs.python-requests.org>) Python module. 
+Description: Python requests for R
 URL: https://github.com/abresler/requestsR
 BugReports: https://github.com/abresler/requestsR/issues
 License: AGPL
@@ -15,13 +15,11 @@ Depends:
     R (>= 3.2.0)
 Imports:
    reticulate,
-   glue,
    dplyr,
    purrr,
    stringr,
    tibble,
    xml2,
-   rvest,
    jsonlite
 LazyData: true
 RoxygenNote: 6.0.1

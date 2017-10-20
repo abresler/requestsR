@@ -4,9 +4,9 @@
 \name{requestsR}
 \alias{requestsR}
 \alias{requestsR-package}
-\title{R requests wrapper}
+\title{Python}
 \description{
-R requests wrapper
+Python
 }
 \author{
 Alex Bresler (abresler@asbcllc.com)

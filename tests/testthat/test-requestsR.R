@@ -7,15 +7,18 @@ library(jsonlite)
 resp <-
   requestsR::get(url = 'https://api.github.com/events')
 
-json_data <- resp %>%
+json_data <-
+  resp %>%
   parse_from_json(is_data_frame = F)
 
 json_data
 
 
 # basic.post --------------------------------------------------------------
-resp <- post(url = 'http://httpbin.org/post', data = list(key = "value"))
-resp %>% parse_from_json(is_data_frame = FALSE)
+resp <-
+  post(url = 'http://httpbin.org/post', data = list(key = "value"))
+resp %>%
+  parse_from_json(is_data_frame = FALSE)
 
 # other -------------------------------------------------------------------
 resp <-
@@ -29,7 +32,6 @@ resp = options('http://httpbin.org/get')
 # payloads ----------------------------------------------------------------
 payload <- "{'key1': 'value1', 'key2': 'value2'}" %>% convert_dictionary_to_list()
 resp <- get(url = 'http://httpbin.org/get', params = payload)
-resp$url
 resp %>% parse_from_json()
 
 # headers -----------------------------------------------------------------
@@ -55,12 +57,9 @@ resp %>%
 # Post.tupl ---------------------------------------------------------------
 
 payload <-
-  tuple(
-    tuple('key1', 'value1'),
-    tuple('key1', 'value2')
-  )
+  tuple(tuple('key1', 'value1'),
+        tuple('key1', 'value2'))
 resp <- post('http://httpbin.org/post', data = payload)
-
 
 # cookies -----------------------------------------------------------------
 
