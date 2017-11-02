@@ -85,7 +85,7 @@ Head <-
 #' @export
 #'
 #' @examples
-delete <-
+Delete <-
   function(url, ...) {
     check_url(url = url)
     import_requests()
@@ -141,7 +141,7 @@ Options <- function(url, ...) {
 #' @export
 #'
 #' @examples
-put <- function(url, ...) {
+Put <- function(url, ...) {
   check_url(url = url)
   import_requests()
   resp <-

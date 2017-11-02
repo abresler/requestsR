@@ -47,7 +47,7 @@ post.basic <-
 #' @export
 #' @import dplyr purrr
 #' @examples
-post <-
+Post <-
   function(url = NULL,
            auth = NULL,
            parse_json = NULL,

@@ -40,13 +40,13 @@ system("pip install requests")
 
 - `import_requests`: imports requests module for full use in R
 - `Get`: mimics python get request 
-- `post`: mimics python post request
+- `Post`: mimics python post request
 
 ### Other functions
 
 - `Head`: mimics python head request
-- `delete`: mimcs python delete request
-- `put`: mimics python put request
+- `Delete`: mimcs python delete request
+- `Put`: mimics python put request
 
 #### Mungers
 
