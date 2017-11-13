@@ -3,7 +3,11 @@ title: "requestsR"
 output: github_document
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
 
+  
 `requestsR` : Python's Requests module for R
 
 Ref: <http://docs.python-requests.org/>
