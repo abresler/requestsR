@@ -70,4 +70,4 @@ options(width=120)
 
 ### Usage 
 
-Please feel free to take a look at <a href = 'http://asbcllc.com/r_packages/requestsR/introduction/index.html' this blog post </a> demonstrating how to use the package.
+Please feel free to take a look at <a href = 'http://asbcllc.com/r_packages/requestsR/introduction/index.html'> this blog post </a> demonstrating how to use the package.
