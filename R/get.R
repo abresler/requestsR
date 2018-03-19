@@ -24,7 +24,6 @@ get.login <-
             ...)
     resp$close()
     gc()
-    closeAllConnections()
     resp
   }
 
@@ -44,7 +43,6 @@ get.basic <-
     resp <- r$get(url = url , ...)
     resp$close()
     gc()
-    closeAllConnections()
     resp
   }
 

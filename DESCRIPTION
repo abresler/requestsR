@@ -1,9 +1,9 @@
 Package: requestsR
 Type: Package
 Title: Python requests for R
-Version: 0.010034
-Date: 2017-10-19
-Author: Alex Bresler (abresler@@asbcllc.com)
+Version: 0.0101
+Date: 2018-03-19
+Authors@R: c(person("Alex", "Bresler", email = "abresler@asbcllc.com", role = c("aut", "cre")))
 Maintainer: Alex Bresler <abresler@asbcllc.com>
 Description: Python requests for R
 URL: https://github.com/abresler/requestsR
@@ -22,4 +22,4 @@ Imports:
    xml2,
    jsonlite
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.0.1.9000

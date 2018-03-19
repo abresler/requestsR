@@ -65,7 +65,6 @@ Head <-
       r$head(url = url, ...)
     resp$close()
     gc()
-    closeAllConnections()
     resp
   }
 
@@ -93,7 +92,6 @@ Delete <-
       r$delete(url = url, ...)
     resp$close()
     gc()
-    closeAllConnections()
     resp
   }
 
@@ -121,7 +119,6 @@ Options <- function(url, ...) {
     r$options(url = url, ...)
   resp$close()
   gc()
-  closeAllConnections()
   resp
 }
 
@@ -148,7 +145,5 @@ Put <- function(url, ...) {
     r$options(url = url, ...)
   resp$close()
   gc()
-  closeAllConnections()
-  resp
 }
 
