@@ -76,6 +76,7 @@ parse_response_json <-
   function(resp, is_data_frame = FALSE) {
     json_df <-
       resp$content %>%
+      as.character() %>%
       jsonlite::fromJSON(flatten = TRUE)
 
     if (is_data_frame) {
@@ -103,6 +104,7 @@ parse_response_html <-
   function(resp) {
     html <-
       resp$content %>%
+      as.character() %>%
       stringi::stri_trans_general("Latin-ASCII") %>%
       xml2::read_html()
 
