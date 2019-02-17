@@ -45,7 +45,7 @@ generate_url_reference <-
       list('http://', domain_slug, tl_domain) %>%
       purrr::reduce(paste0)
     df <-
-      data_frame(urlReferer = url,
+      tibble(urlReferer = url,
                  userAgent = user_agent)
     return(df)
   }
@@ -65,24 +65,24 @@ check_url <-
 #' content into JSON
 #'
 #' @param resp response module
-#' @param is_data_frame if \code{TRUE} returns a data frame
+#' @param is_tibble if \code{TRUE} returns a data frame
 #'
 #' @return
-#' JSON object or \code{data_frame}
+#' JSON object or \code{tibble}
 #' @export
 #'
 #' @examples
 parse_response_json <-
-  function(resp, is_data_frame = FALSE) {
+  function(resp, is_tibble = FALSE) {
     json_df <-
       resp$content %>%
       as.character() %>%
       jsonlite::fromJSON(flatten = TRUE)
 
-    if (is_data_frame) {
+    if (is_tibble) {
       json_df <-
         json_df %>%
-        dplyr::as_data_frame()
+        dplyr::as_tibble()
     }
 
     json_df

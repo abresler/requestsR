@@ -12,6 +12,8 @@ knitr::opts_chunk$set(echo = TRUE)
 
 Ref: <http://docs.python-requests.org/>
 
+Ref: <https://asbcllc.com/r_packages/requestsR/docs/index.html>
+
 >_"Requests is an elegant and simple HTTP library for Python {and now R}, built for human beings. You are currently looking at the documentation of the development release.."_
 
 ### Background
@@ -22,7 +24,7 @@ Requests module.
 
 This package aims to port those powers to R, I like to think of this package as the [Bo Jackson](https://en.wikipedia.org/wiki/Bo_Jackson) of web interaction tools.  
 
-![requestsR Logo](http://asbcllc.com/r_packages/requestsR/logo/reqestsRLogo.png)
+![requestsR Logo](https://asbcllc.com/r_packages/requestsR/logo/reqestsRLogo.png)
 
 It is fast, agile, powerful, clean and now it plays 2 languages!
 
@@ -70,4 +72,4 @@ options(width=120)
 
 ### Usage 
 
-Please feel free to take a look at <a href = 'http://asbcllc.com/r_packages/requestsR/introduction/index.html'> this blog post </a> demonstrating how to use the package.
+Please feel free to take a look at <a href = 'https://asbcllc.com/r_packages/requestsR/introduction/index.html'> this blog post </a> demonstrating how to use the package.

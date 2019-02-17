@@ -5,6 +5,8 @@ requestsR
 
 Ref: <http://docs.python-requests.org/>
 
+Ref: <https://asbcllc.com/r_packages/requestsR/docs/index.html>
+
 > *“Requests is an elegant and simple HTTP library for Python {and now
 > R}, built for human beings. You are currently looking at the
 > documentation of the development release..”*
@@ -20,7 +22,7 @@ package as the [Bo Jackson](https://en.wikipedia.org/wiki/Bo_Jackson) of
 web interaction tools.
 
 ![requestsR
-Logo](http://asbcllc.com/r_packages/requestsR/logo/reqestsRLogo.png)
+Logo](https://asbcllc.com/r_packages/requestsR/logo/reqestsRLogo.png)
 
 It is fast, agile, powerful, clean and now it plays 2 languages\!
 
@@ -74,5 +76,5 @@ options(width=120)
 ### Usage
 
 Please feel free to take a look at
-[this](%22http://abresler.github.io/r_packages/requestsR/introduction/index.html%22)
-introductory blog post that outlines how to use the package.
+<a href = 'https://asbcllc.com/r_packages/requestsR/introduction/index.html'>
+this blog post </a> demonstrating how to use the package.

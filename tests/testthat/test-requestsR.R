@@ -9,7 +9,7 @@ resp <-
 
 json_data <-
   resp %>%
-  parse_response_json(is_data_frame = F)
+  parse_response_json(is_tibble = F)
 
 json_data
 
@@ -18,7 +18,7 @@ json_data
 resp <-
   post(url = 'http://httpbin.org/post', data = list(key = "value"))
 resp %>%
-  parse_response_json(is_data_frame = FALSE)
+  parse_response_json(is_tibble = FALSE)
 
 # other -------------------------------------------------------------------
 resp <-
@@ -88,7 +88,7 @@ resp$encoding
 resp <- Get(url = 'https://api.github.com/repos/requests/requests/issues/482')
 resp$status_code
 resp %>%
-  parse_response_json(is_data_frame = FALSE)
+  parse_response_json(is_tibble = FALSE)
 
 
 # options -----------------------------------------------------------------

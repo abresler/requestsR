@@ -25,7 +25,7 @@ Including \itemize{
 }}
 
 \item{parse_to_json}{if not \code{NULL} returns JSON, to return parsed JSON
-if possible, list(is_data_frame = TRUE)}
+if possible, list(is_tibble = TRUE)}
 
 \item{parse_to_html}{if \code{true}}
 }

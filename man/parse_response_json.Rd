@@ -4,15 +4,15 @@
 \alias{parse_response_json}
 \title{Parse response json}
 \usage{
-parse_response_json(resp, is_data_frame = FALSE)
+parse_response_json(resp, is_tibble = FALSE)
 }
 \arguments{
 \item{resp}{response module}
 
-\item{is_data_frame}{if \code{TRUE} returns a data frame}
+\item{is_tibble}{if \code{TRUE} returns a data frame}
 }
 \value{
-JSON object or \code{data_frame}
+JSON object or \code{tibble}
 }
 \description{
 Parses response object

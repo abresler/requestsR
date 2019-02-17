@@ -55,7 +55,7 @@ get.basic <-
 #' list(username = "user", password = "pwd")
 #' } or \code{NULL} - default
 #' @param parse_to_json if not \code{NULL} returns JSON, to return parsed JSON
-#' if possible, list(is_data_frame = TRUE)
+#' if possible, list(is_tibble = TRUE)
 #' @param parse_to_html if \code{true}
 #' @param ... Other parameters passable to the get verb.
 #' Including \itemize{
@@ -75,7 +75,7 @@ Get <-
   function(url = NULL,
            auth = NULL,
            parse_json = NULL,
-           # list(parse_to_json = TRUE, return_data_frame = FALSE)
+           # list(parse_to_json = TRUE, return_tibble = FALSE)
            parse_html = FALSE,
            ...) {
     if (url %>% purrr::is_null()) {
@@ -91,20 +91,20 @@ Get <-
 
 
 
-      if (parse_json %>% tibble::has_name("is_data_frame")) {
-      if (parse_json[['is_data_frame']] == T) {
+      if (parse_json %>% tibble::has_name("is_tibble")) {
+      if (parse_json[['is_tibble']] == T) {
         df <-
         resp %>%
-        parse_response_json(is_data_frame = TRUE)
+        parse_response_json(is_tibble = TRUE)
       } else {
         df <-
           resp %>%
-          parse_response_json(is_data_frame = FALSE)
+          parse_response_json(is_tibble = FALSE)
       }
       } else {
         df <-
           resp %>%
-          parse_response_json(is_data_frame = FALSE)
+          parse_response_json(is_tibble = FALSE)
       }
 
       return(df)
@@ -131,20 +131,20 @@ Get <-
 
 
 
-    if (parse_json %>% tibble::has_name("is_data_frame")) {
-      if (parse_json[['is_data_frame']] == T) {
+    if (parse_json %>% tibble::has_name("is_tibble")) {
+      if (parse_json[['is_tibble']] == T) {
         df <-
           resp %>%
-          parse_response_json(is_data_frame = TRUE)
+          parse_response_json(is_tibble = TRUE)
       } else {
         df <-
           resp %>%
-          parse_response_json(is_data_frame = FALSE)
+          parse_response_json(is_tibble = FALSE)
       }
     } else {
       df <-
         resp %>%
-        parse_response_json(is_data_frame = FALSE)
+        parse_response_json(is_tibble = FALSE)
     }
 
     return(df)
