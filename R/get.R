@@ -23,7 +23,7 @@ get.login <-
             auth = login,
             ...)
     resp$close()
-    gc()
+
     resp
   }
 
@@ -42,7 +42,7 @@ get.basic <-
 
     resp <- r$get(url = url , ...)
     resp$close()
-    gc()
+
     resp
   }
 

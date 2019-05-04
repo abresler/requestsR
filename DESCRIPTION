@@ -1,7 +1,7 @@
 Package: requestsR
 Type: Package
 Title: Python requests for R
-Version: 0.0102
+Version: 0.010291
 Date: 2018-03-19
 Authors@R: c(person("Alex", "Bresler", email = "abresler@asbcllc.com", role = c("aut", "cre")))
 Maintainer: Alex Bresler <abresler@asbcllc.com>

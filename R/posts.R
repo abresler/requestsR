@@ -20,7 +20,7 @@ post.basic <-
     }
     resp <- r$post(url = url, ...)
     resp$close()
-    gc()
+
     resp
   }
 

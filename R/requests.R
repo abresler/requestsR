@@ -64,7 +64,7 @@ Head <-
     resp <-
       r$head(url = url, ...)
     resp$close()
-    gc()
+
     resp
   }
 
@@ -91,7 +91,7 @@ Delete <-
     resp <-
       r$delete(url = url, ...)
     resp$close()
-    gc()
+
     resp
   }
 
@@ -118,7 +118,7 @@ Options <- function(url, ...) {
   resp <-
     r$options(url = url, ...)
   resp$close()
-  gc()
+
   resp
 }
 
@@ -144,6 +144,6 @@ Put <- function(url, ...) {
   resp <-
     r$options(url = url, ...)
   resp$close()
-  gc()
+
 }
 
