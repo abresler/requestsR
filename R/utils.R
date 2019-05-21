@@ -97,6 +97,7 @@ parse_response_json <-
 #' @param resp response module
 #'
 #' @return an html object
+#' @importFrom stringi stri_trans_general
 #' @export
 #'
 #' @examples
@@ -105,8 +106,8 @@ parse_response_html <-
     html <-
       resp$content %>%
       as.character() %>%
-      stringi::stri_trans_general("Latin-ASCII") %>%
-      xml2::read_html()
+      stri_trans_general("Latin-ASCII") %>%
+      read_html()
 
     html
   }
@@ -117,6 +118,7 @@ parse_response_html <-
 #' @param assign_name if not NULL assigns output to environment
 #'
 #' @return a list
+#' @importFrom rlang parse_expr
 #' @export
 #'
 #' @examples
@@ -129,12 +131,12 @@ convert_dictionary_to_list <-
       assign(
         x = assign_name,
         value = func_call %>%
-          rlang::parse_expr(x = .) %>%
+          parse_expr(x = .) %>%
           eval(),
         envir = .GlobalEnv
       )
     }
     func_call %>%
-      rlang::parse_expr(x = .) %>%
+      parse_expr(x = .) %>%
       eval()
   }
