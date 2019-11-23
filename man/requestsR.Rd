@@ -3,7 +3,6 @@
 \docType{package}
 \name{requestsR}
 \alias{requestsR}
-\alias{requestsR-package}
 \title{Python}
 \description{
 Python

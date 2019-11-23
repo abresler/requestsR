@@ -4,8 +4,7 @@
 \alias{Get}
 \title{Request get}
 \usage{
-Get(url = NULL, auth = NULL, parse_json = NULL, parse_html = FALSE,
-  ...)
+Get(url = NULL, auth = NULL, parse_json = NULL, parse_html = FALSE, ...)
 }
 \arguments{
 \item{url}{a url}

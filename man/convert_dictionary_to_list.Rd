@@ -4,9 +4,11 @@
 \alias{convert_dictionary_to_list}
 \title{Converty Python dictionary to list}
 \usage{
-
-  convert_dictionary_to_list(text = "{'DNT': '1', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'en-US,en;q=0.9', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36', 'Accept': 'text/html, */*; q=0.01', 'Referer': 'http://www.cpifinancial.net/analytics/bme100', 'X-Requested-With': 'XMLHttpRequest', 'Connection': 'keep-alive'}",
-  assign_name = NULL)
+convert_dictionary_to_list(
+ 
+    text = "{'DNT': '1', 'Accept-Encoding': 'gzip, deflate', 'Accept-Language': 'en-US,en;q=0.9', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.62 Safari/537.36', 'Accept': 'text/html, */*; q=0.01', 'Referer': 'http://www.cpifinancial.net/analytics/bme100', 'X-Requested-With': 'XMLHttpRequest', 'Connection': 'keep-alive'}",
+  assign_name = NULL
+)
 }
 \arguments{
 \item{text}{vector of text}
