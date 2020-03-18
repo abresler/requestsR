@@ -4,9 +4,6 @@
 \name{requestsR}
 \alias{requestsR}
 \title{Python}
-\description{
-Python
-}
 \author{
 Alex Bresler (abresler@asbcllc.com)
 }
