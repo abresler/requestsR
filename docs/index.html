@@ -6,19 +6,22 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Python requests for R • requestsR</title>
-<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha256-916EbMg70RQy9LHiGkXzG8hSg9EdNy97GazNG/aiY1w=" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha256-U5ZEeKfGNOja007MMD3YBI0A3OSZOQbeG6z2f2Y0hu8=" crossorigin="anonymous"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous">
-<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js" integrity="sha256-FiZwavyI2V6+EXO1U+xzLG3IKldpiTFf3153ea9zikQ=" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
+<!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="bootstrap-toc.css">
+<script src="bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
+<!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Python requests for R">
 <meta property="og:description" content="Python requests for R">
-<meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
 </head>
-<body>
-    <div class="container template-article">
+<body data-spy="scroll" data-target="#toc">
+    
+
+    <div class="container template-home">
       <header><div class="navbar navbar-default navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -30,26 +33,20 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">requestsR</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.10291</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="">0.010291</span>
       </span>
     </div>
 
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav">
 <li>
-  <a href="index.html">
-    <span class="fa fa-home fa-lg"></span>
-     
-  </a>
-</li>
-<li>
   <a href="reference/index.html">Reference</a>
 </li>
       </ul>
 <ul class="nav navbar-nav navbar-right">
 <li>
-  <a href="https://github.com/abresler/requestsR">
-    <span class="fa fa-github fa-lg"></span>
+  <a href="https://github.com/abresler/requestsR/" class="external-link">
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -62,43 +59,44 @@
 <!--/.navbar -->
 
       
-      </header><div class="row">
-  <div class="col-md-9 contents">
-    
 
-    
-    
+      </header><div class="row">
+  <div class="contents col-md-9">
+<div class="section level1">
+<div class="page-header"><h1 id="requestsr">requestsR<a class="anchor" aria-label="anchor" href="#requestsr"></a>
+</h1></div>
 <p><code>requestsR</code> : Python’s Requests module for R</p>
-<p>Ref: <a href="http://docs.python-requests.org/" class="uri">http://docs.python-requests.org/</a></p>
-<p>Ref: <a href="https://asbcllc.com/r_packages/requestsR/docs/index.html" class="uri">https://asbcllc.com/r_packages/requestsR/docs/index.html</a></p>
+<p>Ref: <a href="http://docs.python-requests.org/" class="external-link uri">http://docs.python-requests.org/</a></p>
+<p>Ref: <a href="https://asbcllc.com/r_packages/requestsR/docs/index.html" class="external-link uri">https://asbcllc.com/r_packages/requestsR/docs/index.html</a></p>
 <blockquote>
 <p><em>“Requests is an elegant and simple HTTP library for Python {and now R}, built for human beings. You are currently looking at the documentation of the development release..”</em></p>
 </blockquote>
-<div id="background" class="section level3">
-<h3 class="hasAnchor">
-<a href="#background" class="anchor"></a>Background</h3>
+<div class="section level3">
+<h3 id="background">Background<a class="anchor" aria-label="anchor" href="#background"></a>
+</h3>
 <p>R has a number of great packages for interacting with web data but it still lags behind Python in large part because of the power and ease of use of the Requests module.</p>
-<p>This package aims to port those powers to R, I like to think of this package as the <a href="https://en.wikipedia.org/wiki/Bo_Jackson">Bo Jackson</a> of web interaction tools.</p>
+<p>This package aims to port those powers to R, I like to think of this package as the <a href="https://en.wikipedia.org/wiki/Bo_Jackson" class="external-link">Bo Jackson</a> of web interaction tools.</p>
 <div class="figure">
-<img src="https://asbcllc.com/r_packages/requestsR/logo/reqestsRLogo.png" alt="requestsR Logo"><p class="caption">requestsR Logo</p>
+<img src="https://asbcllc.com/r_packages/requestsR/logo/reqestsRLogo.png" alt=""><p class="caption">requestsR Logo</p>
 </div>
 <p>It is fast, agile, powerful, clean and now it plays 2 languages!</p>
 </div>
-<div id="caveats" class="section level3">
-<h3 class="hasAnchor">
-<a href="#caveats" class="anchor"></a>Caveats</h3>
+<div class="section level3">
+<h3 id="caveats">Caveats<a class="anchor" aria-label="anchor" href="#caveats"></a>
+</h3>
 <p>. This is not intended to replace <code>httr</code>, <code>curl</code>, <code>rvest</code>, or whatever package you use to interact with web data. In fact, in many cases you will want to use <code>requestsR</code> in concert with those packages, especially <code>curl</code> and <code>rvest</code>. I have found that <code>requestsR</code> comes in most handy for very complex web scraping tasks that require multiple headers, parameters and cookies.</p>
 </div>
-<div id="installation" class="section level3">
-<h3 class="hasAnchor">
-<a href="#installation" class="anchor"></a>Installation</h3>
+<div class="section level3">
+<h3 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
+</h3>
 <p>This package requires Python and the <code>requests</code> module.</p>
 <p>To install Requests in R you can run:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/system">system</a></span>(<span class="st">"pip install requests"</span>)</a></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/system.html" class="external-link">system</a></span><span class="op">(</span><span class="st">"pip install requests"</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="work-horse-functions" class="section level3">
-<h3 class="hasAnchor">
-<a href="#work-horse-functions" class="anchor"></a>Work-horse functions</h3>
+<div class="section level3">
+<h3 id="work-horse-functions">Work-horse functions<a class="anchor" aria-label="anchor" href="#work-horse-functions"></a>
+</h3>
 <ul>
 <li>
 <code>import_requests</code>: imports requests module for full use in R</li>
@@ -108,9 +106,9 @@
 <code>Post</code>: mimics python post request</li>
 </ul>
 </div>
-<div id="other-functions" class="section level3">
-<h3 class="hasAnchor">
-<a href="#other-functions" class="anchor"></a>Other functions</h3>
+<div class="section level3">
+<h3 id="other-functions">Other functions<a class="anchor" aria-label="anchor" href="#other-functions"></a>
+</h3>
 <ul>
 <li>
 <code>Head</code>: mimics python head request</li>
@@ -119,9 +117,9 @@
 <li>
 <code>Put</code>: mimics python put request</li>
 </ul>
-<div id="mungers" class="section level4">
-<h4 class="hasAnchor">
-<a href="#mungers" class="anchor"></a>Mungers</h4>
+<div class="section level4">
+<h4 id="mungers">Mungers<a class="anchor" aria-label="anchor" href="#mungers"></a>
+</h4>
 <ul>
 <li>
 <code>convert_dictionary_to_list</code>: converts dictionary to list</li>
@@ -132,56 +130,74 @@
 </ul>
 </div>
 </div>
-<div id="installation-1" class="section level3">
-<h3 class="hasAnchor">
-<a href="#installation-1" class="anchor"></a>Installation</h3>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" title="1">devtools<span class="op">::</span><span class="kw"><a href="https://www.rdocumentation.org/packages/devtools/topics/reexports">install_github</a></span>(<span class="st">"abresler/requestsR"</span>)</a></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" title="1"><span class="kw"><a href="https://www.rdocumentation.org/packages/base/topics/options">options</a></span>(<span class="dt">width=</span><span class="dv">120</span>)</a></code></pre></div>
+<div class="section level3">
+<h3 id="installation-1">Installation<a class="anchor" aria-label="anchor" href="#installation-1"></a>
+</h3>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://devtools.r-lib.org/reference/remote-reexports.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"abresler/requestsR"</span><span class="op">)</span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">options</a></span><span class="op">(</span>width<span class="op">=</span><span class="fl">120</span><span class="op">)</span></code></pre></div>
 </div>
-<div id="usage" class="section level3">
-<h3 class="hasAnchor">
-<a href="#usage" class="anchor"></a>Usage</h3>
-<p>Please feel free to take a look at <a href="https://asbcllc.com/r_packages/requestsR/introduction/index.html"> this blog post </a> demonstrating how to use the package.</p>
+<div class="section level3">
+<h3 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
+</h3>
+<p>Please feel free to take a look at <a href="https://asbcllc.com/r_packages/requestsR/introduction/index.html" class="external-link"> this blog post </a> demonstrating how to use the package.</p>
+</div>
 </div>
   </div>
 
-  <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
+  <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <div class="links">
-<h2>Links</h2>
+<h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
-<li>Browse source code at <br><a href="https://github.com/abresler/requestsR">https://​github.com/​abresler/​requestsR</a>
-</li>
-<li>Report a bug at <br><a href="https://github.com/abresler/requestsR/issues">https://​github.com/​abresler/​requestsR/​issues</a>
-</li>
+<li><a href="https://github.com/abresler/requestsR/" class="external-link">Browse source code</a></li>
+<li><a href="https://github.com/abresler/requestsR/issues" class="external-link">Report a bug</a></li>
 </ul>
 </div>
+
 <div class="license">
-<h2>License</h2>
+<h2 data-toc-skip>License</h2>
 <ul class="list-unstyled">
 <li>AGPL</li>
 </ul>
 </div>
+
+
+<div class="citation">
+<h2 data-toc-skip>Citation</h2>
+<ul class="list-unstyled">
+<li><a href="authors.html#citation">Citing requestsR</a></li>
+</ul>
+</div>
+
 <div class="developers">
-<h2>Developers</h2>
+<h2 data-toc-skip>Developers</h2>
 <ul class="list-unstyled">
 <li>Alex Bresler <br><small class="roles"> Author, maintainer </small>  </li>
 </ul>
 </div>
 
-      </div>
 
+
+  </div>
 </div>
 
 
       <footer><div class="copyright">
-  <p>Developed by Alex Bresler.</p>
+  <p></p>
+<p>Developed by Alex Bresler.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.3.0.</p>
+  <p></p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.3.</p>
 </div>
+
       </footer>
 </div>
+
+  
+
 
   
 
