@@ -2,8 +2,20 @@
 % Please edit documentation in R/requestsR-package.R
 \docType{package}
 \name{requestsR}
+\alias{requestsR-package}
 \alias{requestsR}
 \title{Python}
+\description{
+Python requests for R
+}
+\seealso{
+Useful links:
+\itemize{
+  \item \url{https://github.com/abresler/requestsR}
+  \item Report bugs at \url{https://github.com/abresler/requestsR/issues}
+}
+
+}
 \author{
 Alex Bresler (abresler@asbcllc.com)
 }
